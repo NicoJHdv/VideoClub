@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SPTP2BDDataSetListaPelis" targetNamespace="http://tempuri.org/SPTP2BDDataSetListaPelis.xsd" xmlns:mstns="http://tempuri.org/SPTP2BDDataSetListaPelis.xsd" xmlns="http://tempuri.org/SPTP2BDDataSetListaPelis.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SPTP2BDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SPTP2BDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SPTP2.Properties.Settings.GlobalReference.Default.SPTP2BDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="listapelisTableAdapter" GeneratorDataComponentClassName="listapelisTableAdapter" Name="listapelis" UserDataComponentName="listapelisTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SPTP2BDConnectionString (Settings)" DbObjectName="SPTP2BD.dbo.listapelis" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_peli, nom_peli, nom_gen, descrip, anio, web_peli FROM dbo.listapelis</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_peli" DataSetColumn="id_peli" />
+              <Mapping SourceColumn="nom_peli" DataSetColumn="nom_peli" />
+              <Mapping SourceColumn="nom_gen" DataSetColumn="nom_gen" />
+              <Mapping SourceColumn="descrip" DataSetColumn="descrip" />
+              <Mapping SourceColumn="anio" DataSetColumn="anio" />
+              <Mapping SourceColumn="web_peli" DataSetColumn="web_peli" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SPTP2BDDataSetListaPelis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SPTP2BDDataSetListaPelis" msprop:Generator_UserDSName="SPTP2BDDataSetListaPelis">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="listapelis" msprop:Generator_TableClassName="listapelisDataTable" msprop:Generator_TableVarName="tablelistapelis" msprop:Generator_TablePropName="listapelis" msprop:Generator_RowDeletingName="listapelisRowDeleting" msprop:Generator_RowChangingName="listapelisRowChanging" msprop:Generator_RowEvHandlerName="listapelisRowChangeEventHandler" msprop:Generator_RowDeletedName="listapelisRowDeleted" msprop:Generator_UserTableName="listapelis" msprop:Generator_RowChangedName="listapelisRowChanged" msprop:Generator_RowEvArgName="listapelisRowChangeEvent" msprop:Generator_RowClassName="listapelisRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_peli" msprop:Generator_ColumnVarNameInTable="columnid_peli" msprop:Generator_ColumnPropNameInRow="id_peli" msprop:Generator_ColumnPropNameInTable="id_peliColumn" msprop:Generator_UserColumnName="id_peli" type="xs:int" />
+              <xs:element name="nom_peli" msprop:Generator_ColumnVarNameInTable="columnnom_peli" msprop:Generator_ColumnPropNameInRow="nom_peli" msprop:Generator_ColumnPropNameInTable="nom_peliColumn" msprop:Generator_UserColumnName="nom_peli">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nom_gen" msprop:Generator_ColumnVarNameInTable="columnnom_gen" msprop:Generator_ColumnPropNameInRow="nom_gen" msprop:Generator_ColumnPropNameInTable="nom_genColumn" msprop:Generator_UserColumnName="nom_gen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="descrip" msprop:Generator_ColumnVarNameInTable="columndescrip" msprop:Generator_ColumnPropNameInRow="descrip" msprop:Generator_ColumnPropNameInTable="descripColumn" msprop:Generator_UserColumnName="descrip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="anio" msprop:Generator_ColumnVarNameInTable="columnanio" msprop:Generator_ColumnPropNameInRow="anio" msprop:Generator_ColumnPropNameInTable="anioColumn" msprop:Generator_UserColumnName="anio" type="xs:int" />
+              <xs:element name="web_peli" msprop:Generator_ColumnVarNameInTable="columnweb_peli" msprop:Generator_ColumnPropNameInRow="web_peli" msprop:Generator_ColumnPropNameInTable="web_peliColumn" msprop:Generator_UserColumnName="web_peli">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:listapelis" />
+      <xs:field xpath="mstns:id_peli" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
